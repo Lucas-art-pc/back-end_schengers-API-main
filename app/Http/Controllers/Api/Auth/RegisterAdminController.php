@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Http\Controllers\Api\Auth;
+
+use App\Http\Controllers\Controller;
+use App\Http\Requests\RegisterTeacherRequest;
+use App\Models\Teacher;
+use Illuminate\Support\Facades\Hash;
+
+
+class RegisterAdminController extends Controller
+{
+    //
+
+    public function __invoke(RegisterTeacherRequest $request)
+    {
+        try {
+
+        $data = $request->validated();
+        $admin = Teacher::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'role' => 'admin',
+            'status' => 'approved',
+            'apresentation' => $data['apresentation'],
+            'term_privacy' => $data['term_privacy'],
+            'password' => Hash::make($data['password'])
+        ]);
+
+        return response()->json([
+            'admin' => $admin,
+            'message' => 'Cadastrado com sucesso!',
+            'code' => 201
+        ]);
+
+        }catch (\Exception $exception){
+            return response()->json([
+                'message' => 'Erro ao cadastrar Administrador',
+                'error' => $exception->getMessage(),
+                'status' => 400
+            ]);
+        }
+    }
+}

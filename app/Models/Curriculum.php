@@ -1,0 +1,62 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+
+class Curriculum extends Model
+{
+    //
+
+    protected $table = 'tb_curriculum';
+    protected $primaryKey = 'id_curriculum';
+
+    protected $fillable = [
+        'id_curriculum',
+        'fk_id_teacher',
+        'fk_id_vacancy',
+        'name',
+        'email',
+        'public_id',
+        'phone',
+        'linkedin',
+        'portfolio',
+        'education_level',
+        'institution',
+        'course',
+        'graduation_year',
+        'url_image',
+        'professional_experience',
+        'skills',
+        'personal_document',
+        'professional_document',
+        'status'
+    ];
+
+    protected static function booted()
+    {
+        static::saving(function ($model) {
+
+            if (!$model->public_id) {
+                $model->public_id = (string) Str::uuid();
+            }
+        });
+    }
+
+    public function teacher()
+    {
+        return $this->belongsTo(Teacher::class, 'fk_id_teacher');
+    }
+
+    public function vacancy()
+    {
+        return $this->belongsTo(Vacancy::class, 'fk_id_vacancy');
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'public_id';
+    }
+
+}

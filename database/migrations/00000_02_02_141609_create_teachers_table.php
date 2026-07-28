@@ -1,0 +1,46 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('tb_teacher', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->uuid('public_id')->unique()->default(DB::raw('gen_random_uuid()'));
+
+            $table->enum('role', ['teacher', 'admin'])
+                ->default('teacher');
+
+            $table->enum('status', ['approved', 'pending', 'rejected'])
+                ->default('pending');
+
+
+            $table->text('apresentation')->nullable();
+            $table->boolean('term_privacy');
+
+            $table->string('password');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->rememberToken();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('tb_teacher');
+    }
+};

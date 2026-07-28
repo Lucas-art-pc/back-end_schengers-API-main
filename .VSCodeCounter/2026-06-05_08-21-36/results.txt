@@ -1,0 +1,201 @@
+Date : 2026-06-05 08:21:36
+Directory : c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api
+Total : 128 files,  13175 codes, 1062 comments, 1265 blanks, all 15502 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          3 |      8,580 |          0 |          3 |      8,583 |
+| PHP        |        119 |      4,491 |      1,062 |      1,232 |      6,785 |
+| Markdown   |          1 |         39 |          0 |         21 |         60 |
+| XML        |          1 |         35 |          0 |          1 |         36 |
+| JavaScript |          3 |         21 |          0 |          5 |         26 |
+| CSS        |          1 |          9 |          0 |          3 |         12 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                              | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                                 |        128 |     13,175 |      1,062 |      1,265 |     15,502 |
+| . (Files)                                                                                                                                         |          6 |      8,671 |          0 |         27 |      8,698 |
+| app                                                                                                                                               |         62 |      2,351 |        236 |        697 |      3,284 |
+| app\Http                                                                                                                                          |         46 |      1,822 |        197 |        527 |      2,546 |
+| app\Http\Controllers                                                                                                                              |         26 |      1,298 |         98 |        388 |      1,784 |
+| app\Http\Controllers (Files)                                                                                                                      |          1 |          5 |          1 |          3 |          9 |
+| app\Http\Controllers\Api                                                                                                                          |         25 |      1,293 |         97 |        385 |      1,775 |
+| app\Http\Controllers\Api\Admin                                                                                                                    |          2 |         82 |          1 |         20 |        103 |
+| app\Http\Controllers\Api\Area                                                                                                                     |          1 |         42 |         16 |         12 |         70 |
+| app\Http\Controllers\Api\Auth                                                                                                                     |         11 |        380 |         15 |        126 |        521 |
+| app\Http\Controllers\Api\Course                                                                                                                   |          4 |        442 |         29 |        113 |        584 |
+| app\Http\Controllers\Api\Course (Files)                                                                                                           |          1 |        147 |         15 |         41 |        203 |
+| app\Http\Controllers\Api\Course\ActivityCourse                                                                                                    |          2 |        175 |          2 |         48 |        225 |
+| app\Http\Controllers\Api\Course\ClassCourse                                                                                                       |          1 |        120 |         12 |         24 |        156 |
+| app\Http\Controllers\Api\Email                                                                                                                    |          1 |          6 |          1 |          6 |         13 |
+| app\Http\Controllers\Api\Enrollment                                                                                                               |          1 |         29 |          1 |         11 |         41 |
+| app\Http\Controllers\Api\StudyPlan                                                                                                                |          1 |         56 |          1 |         12 |         69 |
+| app\Http\Controllers\Api\Teacher                                                                                                                  |          3 |        135 |         21 |         48 |        204 |
+| app\Http\Controllers\Api\Vacancy                                                                                                                  |          1 |        121 |         12 |         37 |        170 |
+| app\Http\Middleware                                                                                                                               |          2 |         39 |         10 |         13 |         62 |
+| app\Http\Requests                                                                                                                                 |         10 |        268 |         73 |         71 |        412 |
+| app\Http\Resources                                                                                                                                |          8 |        217 |         16 |         55 |        288 |
+| app\Mail                                                                                                                                          |          2 |         71 |          0 |         17 |         88 |
+| app\Models                                                                                                                                        |         13 |        438 |         32 |        148 |        618 |
+| app\Providers                                                                                                                                     |          1 |         20 |          7 |          5 |         32 |
+| bootstrap                                                                                                                                         |          2 |         42 |          1 |         13 |         56 |
+| config                                                                                                                                            |         12 |        557 |        612 |        221 |      1,390 |
+| database                                                                                                                                          |         29 |      1,006 |        140 |        177 |      1,323 |
+| database\factories                                                                                                                                |          2 |         38 |         14 |         12 |         64 |
+| database\migrations                                                                                                                               |         18 |        504 |        116 |        110 |        730 |
+| database\seeders                                                                                                                                  |          9 |        464 |         10 |         55 |        529 |
+| lang                                                                                                                                              |          5 |        257 |         60 |         28 |        345 |
+| lang\en                                                                                                                                           |          4 |        181 |         60 |         24 |        265 |
+| lang\pt-BR                                                                                                                                        |          1 |         76 |          0 |          4 |         80 |
+| public                                                                                                                                            |          1 |         10 |          4 |          7 |         21 |
+| resources                                                                                                                                         |          5 |        122 |          0 |         28 |        150 |
+| resources\css                                                                                                                                     |          1 |          9 |          0 |          3 |         12 |
+| resources\js                                                                                                                                      |          2 |          4 |          0 |          3 |          7 |
+| resources\views                                                                                                                                   |          2 |        109 |          0 |         22 |        131 |
+| resources\views\emails                                                                                                                            |          2 |        109 |          0 |         22 |        131 |
+| routes                                                                                                                                            |          3 |        132 |          1 |         54 |        187 |
+| tests                                                                                                                                             |          3 |         27 |          8 |         13 |         48 |
+| tests (Files)                                                                                                                                     |          1 |          6 |          1 |          4 |         11 |
+| tests\Feature                                                                                                                                     |          1 |         11 |          4 |          5 |         20 |
+| tests\Unit                                                                                                                                        |          1 |         10 |          3 |          4 |         17 |
++---------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                                          | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\README.md                                                                      | Markdown   |         39 |          0 |         21 |         60 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Admin\DataStudents.php                                | PHP        |         22 |          0 |          7 |         29 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Admin\DataTeachers.php                                | PHP        |         60 |          1 |         13 |         74 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Area\AreasController.php                              | PHP        |         42 |         16 |         12 |         70 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\DataUserController.php                           | PHP        |         10 |          0 |          4 |         14 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\ForgotPasswordController.php                     | PHP        |         75 |          0 |         21 |         96 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\LoginAdminController.php                         | PHP        |         39 |          2 |         13 |         54 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\LoginStudentController.php                       | PHP        |         26 |          1 |         12 |         39 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\LoginTeacherAuthorizedController.php             | PHP        |         38 |          2 |         12 |         52 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\LoginTeacherController.php                       | PHP        |         25 |          1 |          9 |         35 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\LogoutController.php                             | PHP        |         21 |          3 |          8 |         32 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\RegisterAdminController.php                      | PHP        |         34 |          1 |          9 |         44 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\RegisterStudentController.php                    | PHP        |         32 |          0 |         10 |         42 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\RegisterTeacherController.php                    | PHP        |         40 |          1 |         14 |         55 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Auth\UserEditData.php                                 | PHP        |         40 |          4 |         14 |         58 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Course\ActivityCourse\ActivityCourseController.php    | PHP        |        135 |          1 |         36 |        172 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Course\ActivityCourse\AnswersCourseController.php     | PHP        |         40 |          1 |         12 |         53 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Course\ClassCourse\ClassCourseController.php          | PHP        |        120 |         12 |         24 |        156 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Course\CourseController.php                           | PHP        |        147 |         15 |         41 |        203 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Email\SendEmailController.php                         | PHP        |          6 |          1 |          6 |         13 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Enrollment\EnrollmentController.php                   | PHP        |         29 |          1 |         11 |         41 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\StudyPlan\StudyPlanController.php                     | PHP        |         56 |          1 |         12 |         69 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Teacher\ActionCurriculumController.php                | PHP        |         42 |          2 |         19 |         63 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Teacher\CurriculumController.php                      | PHP        |         63 |         18 |         19 |        100 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Teacher\DashboardTeacherController.php                | PHP        |         30 |          1 |         10 |         41 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Api\Vacancy\VacancyController.php                         | PHP        |        121 |         12 |         37 |        170 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Controllers\Controller.php                                            | PHP        |          5 |          1 |          3 |          9 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Middleware\AttachBearerTokenFromCookie.php                            | PHP        |         21 |          5 |          5 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Middleware\RoleMiddleware.php                                         | PHP        |         18 |          5 |          8 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\ActivityCourseRequest.php                                    | PHP        |         45 |          8 |         11 |         64 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\AreaRequest.php                                              | PHP        |         16 |          8 |          5 |         29 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\ClassCourseRequest.php                                       | PHP        |         20 |          8 |          5 |         33 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\CourseRequest.php                                            | PHP        |         43 |          8 |         11 |         62 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\CurriculumRequest.php                                        | PHP        |         39 |          0 |         12 |         51 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\EditPassword.php                                             | PHP        |         26 |          8 |          6 |         40 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\LoginRequest.php                                             | PHP        |         17 |          8 |          5 |         30 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\RegisterStudentRequest.php                                   | PHP        |         20 |          8 |          6 |         34 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\RegisterTeacherRequest.php                                   | PHP        |         20 |          8 |          5 |         33 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Requests\VacancyRequest.php                                           | PHP        |         22 |          9 |          5 |         36 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\ContentCourseResource.php                                   | PHP        |         54 |          1 |          9 |         64 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\CurriculumResource.php                                      | PHP        |         35 |          0 |          9 |         44 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\ResourceCourses.php                                         | PHP        |         27 |          0 |          8 |         35 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\ResourceCoursesShow.php                                     | PHP        |         26 |          5 |          7 |         38 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\StudentResource.php                                         | PHP        |         16 |          0 |          4 |         20 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\TeacherResource.php                                         | PHP        |         16 |          5 |          4 |         25 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\UserResource.php                                            | PHP        |         18 |          0 |          5 |         23 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Http\Resources\VacancyResource.php                                         | PHP        |         25 |          5 |          9 |         39 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Mail\ResetPasswordMail.php                                                 | PHP        |         36 |          0 |          9 |         45 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Mail\SendEmailTeacherApproved.php                                          | PHP        |         35 |          0 |          8 |         43 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\ActivityCourse.php                                                  | PHP        |         42 |          2 |         13 |         57 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\ActivityProgress.php                                                | PHP        |         21 |          2 |          8 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\AlternativeActivityCourse.php                                       | PHP        |         23 |          1 |         11 |         35 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\Area.php                                                            | PHP        |         26 |          1 |         11 |         38 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\ClassCourse.php                                                     | PHP        |         40 |          2 |         14 |         56 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\Course.php                                                          | PHP        |         78 |          1 |         20 |         99 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\Curriculum.php                                                      | PHP        |         50 |          1 |         12 |         63 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\LessonProgress.php                                                  | PHP        |         21 |          2 |          8 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\StudentAnswer.php                                                   | PHP        |          8 |          1 |          4 |         13 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\StudyPlan.php                                                       | PHP        |         18 |          1 |          7 |         26 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\Teacher.php                                                         | PHP        |         25 |          0 |          8 |         33 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\User.php                                                            | PHP        |         41 |         17 |         16 |         74 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Models\Vacancy.php                                                         | PHP        |         45 |          1 |         16 |         62 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\app\Providers\AppServiceProvider.php                                           | PHP        |         20 |          7 |          5 |         32 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\bootstrap\app.php                                                              | PHP        |         38 |          1 |         11 |         50 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\bootstrap\providers.php                                                        | PHP        |          4 |          0 |          2 |          6 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\composer.json                                                                  | JSON       |         88 |          0 |          1 |         89 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\composer.lock                                                                  | JSON       |      8,475 |          0 |          1 |      8,476 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\app.php                                                                 | PHP        |         22 |         82 |         23 |        127 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\auth.php                                                                | PHP        |         42 |         74 |         16 |        132 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\cache.php                                                               | PHP        |         64 |         35 |         19 |        118 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\cors.php                                                                | PHP        |         11 |          0 |          9 |         20 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\database.php                                                            | PHP        |        118 |         43 |         23 |        184 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\filesystems.php                                                         | PHP        |         36 |         32 |         13 |         81 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\logging.php                                                             | PHP        |         79 |         33 |         21 |        133 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\mail.php                                                                | PHP        |         57 |         43 |         19 |        119 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\queue.php                                                               | PHP        |         65 |         45 |         20 |        130 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\sanctum.php                                                             | PHP        |         17 |         54 |         14 |         85 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\services.php                                                            | PHP        |         23 |         11 |          9 |         43 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\config\session.php                                                             | PHP        |         23 |        160 |         35 |        218 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\factories\TeacherFactory.php                                          | PHP        |         13 |          0 |          6 |         19 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\factories\UserFactory.php                                             | PHP        |         25 |         14 |          6 |         45 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\00000_02_02_141609_create_teachers_table.php               | PHP        |         29 |          6 |         10 |         45 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\0000_01_01_130349_create_areas_table.php                   | PHP        |         21 |          6 |          4 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\0001_01_01_000000_create_users_table.php                   | PHP        |         41 |          6 |          8 |         55 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\0001_01_01_000001_create_cache_table.php                   | PHP        |         25 |          6 |          5 |         36 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\0001_01_01_000002_create_jobs_table.php                    | PHP        |         46 |          6 |          6 |         58 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\0006_02_02_125057_create_courses_table.php                 | PHP        |         30 |          6 |          6 |         42 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_01_152547_create_personal_access_tokens_table.php  | PHP        |         24 |          6 |          4 |         34 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_02_234014_create_activity_table.php                | PHP        |         28 |          6 |          7 |         41 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_02_234037_create_class_table.php                   | PHP        |         29 |          6 |          4 |         39 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_02_235023_create_alternative_table.php             | PHP        |         21 |          6 |          4 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_03_123452_create_vacancy_table.php                 | PHP        |         27 |          6 |          4 |         37 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_03_125623_create_curriculum_table.php              | PHP        |         46 |          6 |          9 |         61 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_02_03_141054_create_student-course_relation-table.php | PHP        |         22 |          7 |          4 |         33 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_03_08_005337_tb_study_plans.php                       | PHP        |         22 |          8 |          4 |         34 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_03_10_000447_tb_student_answers.php                   | PHP        |         26 |          8 |          8 |         42 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_03_31_001700_tb_lesson_completed.php                  | PHP        |         24 |          7 |          9 |         40 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_04_11_122239_tb_activity_progress.php                 | PHP        |         23 |          7 |         10 |         40 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\migrations\2026_04_14_225613_tb_password_resets.php                   | PHP        |         20 |          7 |          4 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\ActivitySeeder.php                                            | PHP        |         63 |          0 |          4 |         67 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\AlternativeSeeder.php                                         | PHP        |         39 |          0 |          5 |         44 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\AreasSeeder.php                                               | PHP        |         43 |          3 |          8 |         54 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\ClassCourseSeeder.php                                         | PHP        |         25 |          0 |          6 |         31 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\CourseSeeder.php                                              | PHP        |         78 |          0 |          4 |         82 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\DatabaseSeeder.php                                            | PHP        |         23 |          3 |         11 |         37 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\Persons.php                                                   | PHP        |         52 |          4 |          8 |         64 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\StudyPlanSeeder.php                                           | PHP        |         57 |          0 |          4 |         61 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\database\seeders\VacancySeeder.php                                             | PHP        |         84 |          0 |          5 |         89 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\lang\en\auth.php                                                               | PHP        |          6 |         10 |          5 |         21 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\lang\en\pagination.php                                                         | PHP        |          5 |         10 |          5 |         20 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\lang\en\passwords.php                                                          | PHP        |          8 |         10 |          5 |         23 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\lang\en\validation.php                                                         | PHP        |        162 |         30 |          9 |        201 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\lang\pt-BR\validation.php                                                      | PHP        |         76 |          0 |          4 |         80 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\package.json                                                                   | JSON       |         17 |          0 |          1 |         18 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\phpunit.xml                                                                    | XML        |         35 |          0 |          1 |         36 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\public\index.php                                                               | PHP        |         10 |          4 |          7 |         21 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\resources\css\app.css                                                          | CSS        |          9 |          0 |          3 |         12 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\resources\js\app.js                                                            | JavaScript |          1 |          0 |          1 |          2 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\resources\js\bootstrap.js                                                      | JavaScript |          3 |          0 |          2 |          5 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\resources\views\emails\reset-password.blade.php                                | PHP        |         42 |          0 |          8 |         50 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\resources\views\emails\teacher_approved.blade.php                              | PHP        |         67 |          0 |         14 |         81 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\routes\api.php                                                                 | PHP        |        116 |          1 |         47 |        164 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\routes\console.php                                                             | PHP        |          6 |          0 |          3 |          9 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\routes\web.php                                                                 | PHP        |         10 |          0 |          4 |         14 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\tests\Feature\ExampleTest.php                                                  | PHP        |         11 |          4 |          5 |         20 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\tests\TestCase.php                                                             | PHP        |          6 |          1 |          4 |         11 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\tests\Unit\ExampleTest.php                                                     | PHP        |         10 |          3 |          4 |         17 |
+| c:\Users\Usuario\Desktop\tcc-schengenrs\back-end_tcc_schengers-api\vite.config.js                                                                 | JavaScript |         17 |          0 |          2 |         19 |
+| Total                                                                                                                                             |            |     13,175 |      1,062 |      1,265 |     15,502 |
++---------------------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
