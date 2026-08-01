@@ -37,6 +37,10 @@ COPY . .
 
 RUN composer dump-autoload --optimize
 
+# NOVO: copia e prepara o script de entrada
+COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
 # Permissões (storage e cache precisam ser graváveis)
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 storage bootstrap/cache
@@ -44,4 +48,5 @@ RUN chown -R www-data:www-data /var/www/html \
 USER www-data
 
 EXPOSE 9000
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["php-fpm"]
