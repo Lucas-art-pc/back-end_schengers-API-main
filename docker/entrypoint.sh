@@ -14,5 +14,5 @@ php artisan config:clear
 echo "Rodando migrations..."
 php artisan migrate --force
 
-echo "Iniciando o servidor..."
-exec "$@"
+echo "Iniciando Nginx + PHP-FPM..."
+exec supervisord -c /etc/supervisor/supervisord.conf
