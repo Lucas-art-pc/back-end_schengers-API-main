@@ -5,7 +5,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173', 'http://localhost:4173'], // ← sua origem do Vite
+    'allowed_origins' => ['http://localhost:5173', 'http://localhost:4173',  'https://front-endschengers-tccmain-production.up.railway.app'], 
 
     'allowed_origins_patterns' => [],
 
