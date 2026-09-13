@@ -11,8 +11,16 @@ echo "Banco disponível!"
 echo "Limpando cache de configuração antigo..."
 php artisan config:clear
 
-echo "Rodando migrations..."
-php artisan migrate --force
+if [ "$PROCESS_TYPE" = "queue" ]; then
+  echo "Iniciando worker de fila..."
+  exec php artisan queue:work --tries=3 --backoff=5 --sleep=3
+else
+  echo "Rodando migrations..."
+  php artisan migrate --force
 
-echo "Iniciando Nginx + PHP-FPM..."
-exec supervisord -c /etc/supervisor/supervisord.conf
+  echo "Criando link de storage..."
+  php artisan storage:link || echo "Link já existe, seguindo..."
+
+  echo "Iniciando Nginx + PHP-FPM..."
+  exec supervisord -c /etc/supervisor/supervisord.conf
+fi
