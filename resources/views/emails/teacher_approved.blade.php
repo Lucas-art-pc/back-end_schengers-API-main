@@ -44,7 +44,7 @@
                         <table width="100%" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td align="center" style="padding-bottom:30px;">
-                                    <a href="{{ url('https://schegers-plataform.vercel.app/') }}"
+                                    <a href="{{ url('https://schengers.up.railway.app/auth/login-teacherUser') }}"
                                        style="background-color:#1e40af; color:#ffffff; text-decoration:none;
                                               padding:12px 28px; border-radius:6px; font-size:15px;
                                               display:inline-block;">
