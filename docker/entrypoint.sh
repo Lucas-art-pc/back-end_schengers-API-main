@@ -12,8 +12,8 @@ echo "Limpando cache de configuração antigo..."
 php artisan config:clear
 
 if [ "$PROCESS_TYPE" = "queue" ]; then
-  echo "Iniciando worker de fila..."
-  exec php artisan queue:work --tries=3 --backoff=5 --sleep=3
+  echo "Iniciando worker de fila (via supervisor)..."
+  exec supervisord -c /etc/supervisor/supervisord-queue.conf
 else
   echo "Rodando migrations..."
   php artisan migrate --force

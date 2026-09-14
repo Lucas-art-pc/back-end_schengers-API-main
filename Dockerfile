@@ -36,6 +36,7 @@ RUN composer dump-autoload --optimize
 
 COPY docker/nginx.conf /etc/nginx/http.d/default.conf
 COPY docker/supervisord.conf /etc/supervisor/supervisord.conf
+COPY docker/supervisord-queue.conf /etc/supervisor/supervisord-queue.conf
 COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
