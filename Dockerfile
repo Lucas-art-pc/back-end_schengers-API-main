@@ -20,6 +20,7 @@ RUN docker-php-ext-install \
     zip \
     exif \
     pcntl \
+    posix \
     bcmath \
     intl
 
