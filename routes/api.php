@@ -122,6 +122,7 @@ Route::prefix('courses')->group(function () {
     Route::get('/', [CourseController::class, 'index']);
 
     Route::get('/{public_id}/contentCourse', [CourseController::class, 'showContentCourse'])->middleware('auth:sanctum');
+    
 
     Route::get('/{public_id}', [CourseController::class, 'show']);
     Route::delete('/{public_id}', [CourseController::class, 'destroy']);
