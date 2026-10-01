@@ -5,7 +5,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173', 'http://localhost:4173',  'https://schengers.up.railway.app', 'https://plataform.schengers.com.br/'], 
+    'allowed_origins' => ['http://localhost:5173', 'http://localhost:4173',  'https://schengers.up.railway.app', 'https://plataform.schengers.com.br'], 
 
     'allowed_origins_patterns' => [],
 
