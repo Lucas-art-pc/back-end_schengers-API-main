@@ -39,7 +39,7 @@ class ForgotPasswordController extends Controller
             'expires_at' => now()->addMinutes(60)
         ]);
 
-        $resetLink = "https://plataform.schengers.com.br ". "/auth/reset-password?token={$plainToken}&email={$request->email}";
+        $resetLink = "https://plataform.schengers.com.br". "/auth/reset-password?token={$plainToken}&email={$request->email}";
 
         Mail::to($request->email)->queue(new ResetPasswordMail($resetLink));
         return response()->json([
