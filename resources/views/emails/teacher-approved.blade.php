@@ -9,7 +9,7 @@
 <body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, Helvetica, sans-serif;">
 
 @php
-    $loginUrl = rtrim(config('app.frontend_url', 'https://plataform.schengers.com.br'), '/') . '/auth/login-teacherUser';
+    $loginUrl = 'https://plataform.schengers.com.br'. '/auth/login-teacherUser';
 @endphp
 
 <!-- Texto de pré-visualização (aparece ao lado do assunto na caixa de entrada) -->
