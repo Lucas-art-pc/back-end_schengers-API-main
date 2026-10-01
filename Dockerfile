@@ -37,9 +37,8 @@ RUN composer dump-autoload --optimize
 
 COPY docker/nginx.conf /etc/nginx/http.d/default.conf
 COPY docker/supervisord.conf /etc/supervisor/supervisord.conf
-COPY docker/supervisord-queue.conf /etc/supervisor/supervisord-queue.conf
-COPY docker/entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
+RUN sed -i 's/\r$//' docker/start-web.sh docker/start-worker.sh \
+    && chmod +x docker/start-web.sh docker/start-worker.sh
 
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 storage bootstrap/cache
@@ -47,5 +46,4 @@ RUN chown -R www-data:www-data /var/www/html \
 RUN mkdir -p /run/nginx
 
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-CMD ["php-fpm"]
+CMD ["sh", "docker/start-web.sh"]
