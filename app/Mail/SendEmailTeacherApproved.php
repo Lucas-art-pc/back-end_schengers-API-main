@@ -27,13 +27,13 @@ class SendEmailTeacherApproved extends Mailable
     }
 
     public function content(): Content
-    {
-        return new Content(
-            view: 'emails.teacher_approved',
-            text: 'emails.teacher_approved_text',
-            with: ['teacher' => $this->teacher],
-        );
-    }
+{
+    return new Content(
+        view: 'emails.teacher_approved',
+        text: 'emails.teacher_approved_text',
+        with: ['teacher' => $this->teacher],
+    );
+}
     public function attachments(): array
     {
         return [];
