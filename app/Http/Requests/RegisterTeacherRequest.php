@@ -24,7 +24,7 @@ class RegisterTeacherRequest extends FormRequest
         return [
             'name' => 'required|string|min:6|max:100',
             'email' => 'required|email|unique:tb_teacher,email',
-            'apresentation' => 'required|min:10|max:150',
+            'apresentation' => 'required|min:10|max:1000',
             'password' => 'required|min:8|confirmed',
             'term_privacy' => 'required|accepted',
         ];
