@@ -29,8 +29,8 @@ class SendEmailTeacherApproved extends Mailable
     public function content(): Content
 {
     return new Content(
-        view: 'emails.teacher_approved',
-        text: 'emails.teacher_approved_text',
+        view: 'emails.teacher-approved',
+        text: 'emails.teacher-approved-text',
         with: ['teacher' => $this->teacher],
     );
 }
