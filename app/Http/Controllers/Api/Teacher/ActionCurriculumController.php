@@ -12,57 +12,32 @@ use Illuminate\Support\Facades\Mail;
 
 class ActionCurriculumController extends Controller
 {
-    //
-
-
-
     public function approveCurriculum(Curriculum $curriculum)
     {
+        if ($curriculum->status === 'approved') {
+            return response()->json(['message' => 'Currículo já aprovado.'], 409);
+        }
+
         DB::transaction(function () use ($curriculum) {
-
-            $curriculum->update([
-                'status' => 'approved'
-            ]);
-
-            if ($curriculum->teacher) {
-                $curriculum->teacher->update([
-                    'status' => 'approved'
-                ]);
-            }
-
-            // Dispara APÓS commit
-            DB::afterCommit(function () use ($curriculum) {
-
-                if ($curriculum->teacher && $curriculum->email) {
-                    Mail::to($curriculum->email)
-                        ->queue(new SendEmailTeacherApproved($curriculum));
-                }
-
-            });
+            $curriculum->update(['status' => 'approved']);
+            $curriculum->teacher?->update(['status' => 'approved']);
         });
 
-        return response()->json([
-            'message' => 'Currículo aprovado e e-mail enviado com sucesso!'
-        ]);
+        if ($curriculum->teacher && $curriculum->email) {
+            Mail::to($curriculum->email)
+                ->queue(new SendEmailTeacherApproved($curriculum->teacher));
+        }
+
+        return response()->json(['message' => 'Currículo aprovado com sucesso!']);
     }
-
-
 
     public function rejectCurriculum(Curriculum $curriculum)
     {
-        $curriculum->update([
-            'status' => 'rejected'
-        ]);
+        DB::transaction(function () use ($curriculum) {
+            $curriculum->update(['status' => 'rejected']);
+            $curriculum->teacher?->update(['status' => 'rejected']);
+        });
 
-        if ($curriculum->teacher) {
-            $curriculum->teacher->update([
-                'status' => 'rejected'
-            ]);
-        }
-
-        return response()->json([
-            'message' => 'Currículo não aceito com sucesso.'
-        ]);
+        return response()->json(['message' => 'Currículo não aceito com sucesso.']);
     }
-
 }

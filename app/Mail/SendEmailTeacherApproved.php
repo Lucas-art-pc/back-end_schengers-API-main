@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -9,34 +10,32 @@ use Illuminate\Queue\SerializesModels;
 
 class SendEmailTeacherApproved extends Mailable
 {
-        use Queueable, SerializesModels;
+    use Queueable, SerializesModels;
 
-        public $teacher;
+    public $teacher;
 
     public function __construct($teacher)
     {
-         $this->teacher = $teacher;
+        $this->teacher = $teacher;
     }
 
     public function envelope(): Envelope
     {
         return new Envelope(
-        subject: 'Cadastro aprovado como professor'
+            subject: 'Cadastro aprovado como professor'
         );
     }
 
-        public function content(): Content
-        {
+    public function content(): Content
+    {
         return new Content(
             view: 'emails.teacher_approved',
-            with: [
-        'teacher' => $this->teacher
-        ]
+            text: 'emails.teacher_approved_text',
+            with: ['teacher' => $this->teacher],
         );
-        }
-
-        public function attachments(): array
-        {
+    }
+    public function attachments(): array
+    {
         return [];
-        }
+    }
 }

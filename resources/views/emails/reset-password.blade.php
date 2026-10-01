@@ -1,49 +1,106 @@
-<div style="background: #f4f4f8; padding: 2rem; display: flex; justify-content: center; font-family: Arial, sans-serif;">
-    <div style="max-width: 480px; width: 100%; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Redefinição de senha</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, Helvetica, sans-serif;">
 
-        <!-- Header -->
-        <div style="background: #26215C; padding: 2rem; text-align: center;">
-            <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                </svg>
-            </div>
-            <p style="margin: 0; color: white; font-size: 18px; font-weight: 500;">Redefinição de senha</p>
-        </div>
-
-        <!-- Body -->
-        <div style="padding: 2rem 2rem 1.5rem;">
-            <p style="margin: 0 0 1rem; font-size: 15px; color: #1a1a1a; line-height: 1.6;">
-                Recebemos uma solicitação para redefinir a senha da sua conta. Clique no botão abaixo para continuar.
-            </p>
-
-            <div style="text-align: center; margin: 1.75rem 0;">
-                <a href="{{ $resetLink }}" style="display: inline-block; background: #534AB7; color: white; font-size: 15px; font-weight: 500; text-decoration: none; padding: 0.75rem 2rem; border-radius: 8px;">
-                    Redefinir minha senha
-                </a>
-            </div>
-
-            <div style="background: #f4f4f8; border-radius: 8px; padding: 0.875rem 1rem; display: flex; align-items: center; gap: 10px; margin-top: 1.5rem;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                <p style="margin: 0; font-size: 13px; color: #6b7280; line-height: 1.5;">
-                    Este link expira em <strong style="font-weight: 500; color: #1a1a1a;">60 minutos</strong>. Após isso, será necessário solicitar um novo.
-                </p>
-            </div>
-
-            <p style="margin: 1.5rem 0 0; font-size: 13px; color: #6b7280; line-height: 1.6;">
-                Se você não solicitou a redefinição de senha, ignore este e-mail. Sua senha permanece a mesma.
-            </p>
-        </div>
-
-        <!-- Footer -->
-        <div style="border-top: 1px solid #e5e7eb; padding: 1rem 2rem; text-align: center;">
-            <p style="margin: 0; font-size: 12px; color: #6b7280;">Se o botão não funcionar, copie e cole este link no navegador:</p>
-            <p style="margin: 0.5rem 0 0; font-size: 12px; color: #534AB7; word-break: break-all;">{{ $resetLink }}</p>
-        </div>
-
-    </div>
+<!-- Texto de pré-visualização (aparece ao lado do assunto na caixa de entrada) -->
+<div style="display:none; max-height:0; overflow:hidden; opacity:0; font-size:1px; line-height:1px; color:#f4f6f8;">
+    Use o link para redefinir sua senha. Ele expira em {{ $expiresInMinutes ?? 60 }} minutos.
 </div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8; padding:20px 10px;">
+    <tr>
+        <td align="center">
+
+            <!-- Container -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                   style="max-width:480px; background-color:#ffffff; border-radius:8px; overflow:hidden;">
+
+                <!-- Header -->
+                <tr>
+                    <td align="center" style="background-color:#1e40af; padding:28px 20px;">
+                        <p style="margin:0 0 6px 0; font-size:13px; font-weight:bold; letter-spacing:2px; color:#fcac21;">
+                            SCHENGERS
+                        </p>
+                        <p style="margin:0; font-size:20px; font-weight:bold; color:#ffffff;">
+                            Redefinição de senha
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Conteúdo -->
+                <tr>
+                    <td style="padding:30px 30px 10px 30px; color:#333333;">
+                        <p style="font-size:15px; margin:0 0 24px 0; line-height:1.6;">
+                            Recebemos uma solicitação para redefinir a senha da sua conta.
+                            Clique no botão abaixo para continuar.
+                        </p>
+
+                        <!-- Botão -->
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="center" style="padding-bottom:24px;">
+                                    <a href="{{ $resetLink }}"
+                                       target="_blank"
+                                       style="background-color:#1e40af; color:#ffffff; text-decoration:none;
+                                              padding:14px 32px; border-radius:6px; font-size:15px;
+                                              font-weight:bold; display:inline-block;">
+                                        Redefinir minha senha
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!-- Aviso de expiração -->
+                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="background-color:#f1f5f9; border-radius:6px; padding:12px 16px;
+                                           font-size:13px; line-height:1.5; color:#64748b;">
+                                    Este link expira em
+                                    <strong style="color:#1a1a1a;">{{ $expiresInMinutes ?? 60 }} minutos</strong>.
+                                    Depois disso, será necessário solicitar um novo.
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p style="margin:20px 0 0 0; font-size:13px; color:#64748b; line-height:1.6;">
+                            Se você não solicitou a redefinição de senha, ignore este e-mail.
+                            Sua senha permanece a mesma.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Link alternativo -->
+                <tr>
+                    <td align="center" style="padding:20px 30px 24px 30px;">
+                        <p style="margin:0; font-size:12px; line-height:1.6; color:#64748b;">
+                            Se o botão não funcionar, copie e cole este link no navegador:
+                        </p>
+                        <p style="margin:6px 0 0 0; font-size:12px; line-height:1.6;">
+                            <a href="{{ $resetLink }}" style="color:#1e40af; word-break:break-all;">{{ $resetLink }}</a>
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Rodapé -->
+                <tr>
+                    <td align="center"
+                        style="background-color:#f1f5f9; padding:15px 20px;
+                               font-size:12px; line-height:1.6; color:#64748b;">
+                        &copy; {{ date('Y') }} Plataforma Schengers. Todos os direitos reservados.
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
