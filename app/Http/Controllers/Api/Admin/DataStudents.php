@@ -22,7 +22,7 @@ class DataStudents extends Controller
 {
     $students = User::query()
         ->orderBy('name')
-        ->paginate($request->integer('per_page', 15));
+        ->paginate($request->integer('per_page', 10));
 
    return response()->json($students);
 }
