@@ -6,8 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\StudentResource;
 use App\Models\StudentCourse;
 use App\Models\User;
-
-
+use Illuminate\Http\Request;
 
 class DataStudents extends Controller
 {
@@ -19,13 +18,13 @@ class DataStudents extends Controller
             'count' => $students,
         ]);
     }
-    public function indexStudents()
-    {
-        $students = User::paginate(10);
+    public function indexStudents(Request $request)
+{
+    $students = User::query()
+        ->orderBy('name')
+        ->paginate($request->integer('per_page', 15));
 
-        return response()->json([
-            'students' => StudentResource::collection($students),
-        ]);
-    }
+   return response()->json($students);
+}
 
 }
