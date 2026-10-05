@@ -29,6 +29,13 @@ class LoginStudentController extends Controller
             ], 429);
         }
 
+        logger()->info('rate-limit', [
+    'key' => $key,
+    'ip' => $request->ip(),
+    'xff' => $request->header('X-Forwarded-For'),
+    'remote' => $request->server('REMOTE_ADDR'),
+]);
+
         if (!Auth::guard('web')->attempt($credentials)) {
             RateLimiter::hit($key, 60 * 60 * 2);
 
